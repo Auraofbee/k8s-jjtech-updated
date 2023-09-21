@@ -4,13 +4,14 @@
 General commands
 ##########################
 
-aws eks update-kubeconfig --name <insert name of cluster> --region <region>
+aws eks update-kubeconfig --name jjtech-demo-cluster --region us-east-1 
 
 alias k=kubectl
 alias kgp="kubectl get po" 
 alias kgn="kubectl get nodes"
 
 kubectl api-resources  # To get all api resources i.e their NAME, SHORTNAMES, APIVERSION, NAMESPACED, KIND
+kubectl create ns tower
 
 Kubectl run -h # to get list of subcommands
 
